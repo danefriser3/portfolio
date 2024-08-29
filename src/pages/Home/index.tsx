@@ -2,8 +2,8 @@ import file from "../../files/CV_Daniele_Parisi.pdf";
 
 const Home = () => {
   return (
-    <div className="flex flex-col w-4/5 gap-4">
-      <div className="flex flex-row gap-5 w-full p-3 ">
+    <div className="flex flex-col w-full lg:w-4/5 gap-4">
+      <div className="flex flex-col lg:flex-row gap-2 w-full p-3 ">
         <div className="flex flex-col gap-7 w-full p-7">
           <div className="text-3xl font-semibold text-gray-600">Hello</div>
           <div className="text-5xl font-thin flex flex-col gap-3">
@@ -23,25 +23,29 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="text-xl flex flex-row gap-4">
+          <div className="text-xl flex flex-col lg:flex-row gap-4">
             <button className="bg-blue-500 text-white px-7 py-3 align-middle items-center rounded-2xl">
               See Projects
             </button>
-            <button className="border-2 border-purple-400 text-purple-500 px-7 py-4align-middle items-center rounded-2xl">
+            <button className="border-2 border-purple-400 text-purple-500 px-7 py-3 align-middle items-center rounded-2xl">
               See Designs
             </button>
           </div>
         </div>
         <div className="flex flex-col gap-4 justify-center items-center w-full p-7">
-          <div className="h-[450px] rounded-xl overflow-hidden items-center flex flex-col justify-center">
-            <img src="web_developer.jpeg" alt="" />
+          <div className="lg:h-[450px] rounded-xl overflow-hidden items-center flex flex-col justify-center">
+            <img
+              src="web_developer.jpeg"
+              className="rounded-xl w-full"
+              alt=""
+            />
           </div>
         </div>
       </div>
       <hr />
-      <div className="flex flex-row gap-5 p-3 w-full">
-        <div className="flex flex-col gap-4 w-2/6 justify-center items-center p-7">
-          <div className="w-[450px] rounded-xl overflow-hidden items-center flex flex-col justify-center">
+      <div className="flex flex-col lg:flex-row gap-2 p-3 w-full">
+        <div className="flex flex-col gap-4 w-full justify-center items-center p-7">
+          <div className="w-full lg:w-[450px] rounded-xl overflow-hidden items-center flex flex-col justify-center">
             <img src="profilo_buono.jpg" className="rounded-xl w-full" alt="" />
           </div>
         </div>
@@ -94,7 +98,7 @@ const Home = () => {
         </div>
       </div>
       <hr />
-      <div className="flex flex-row gap-5 p-3 w-full">
+      <div className="flex flex-col lg:flex-row gap-2 p-3 w-full">
         <div className="flex flex-col gap-7 w-full p-7">
           <div className="text-3xl font-semibold text-gray-600">
             Professional Portfolio
@@ -128,8 +132,8 @@ const Home = () => {
         </div>
       </div>
       <hr />
-      <div className="flex flex-row gap-5 p-3 w-full justify-center">
-        <div className="flex flex-col gap-7 w-4/5 p-7">
+      <div className="flex flex-col lg:flex-row gap-2 p-3 w-full justify-center items-center">
+        <div className="flex flex-col gap-7 p-7">
           <div className="text-center text-3xl font-semibold text-gray-600">
             Let's connect
           </div>
@@ -152,8 +156,8 @@ const Home = () => {
         </div>
       </div>
       <hr />
-      <div className="flex flex-row gap-5 p-3 w-full justify-center">
-        <div className="flex flex-col gap-7 w-4/5 p-7">
+      <div className="flex flex-col lg:flex-row gap-2 p-3 w-full justify-center items-center">
+        <div className="flex flex-col gap-7 p-7">
           <div className="text-center text-3xl font-semibold text-gray-600">
             Let's collaborate
           </div>
@@ -161,11 +165,11 @@ const Home = () => {
             <strong>Ready to Start a Project? Hire Me.</strong>
           </div>
 
-          <div className="text-xl justify-center flex flex-row gap-4">
+          <div className="text-xl justify-center flex lg:flex-row flex-col gap-4">
             <button className="bg-blue-500 text-white px-7 py-3 align-middle items-center rounded-2xl">
               See Projects
             </button>
-            <button className="border-2 border-purple-400 text-purple-500 px-7 py-4align-middle items-center rounded-2xl">
+            <button className="border-2 border-purple-400 text-purple-500 px-7 py-3 align-middle items-center rounded-2xl">
               See Designs
             </button>
           </div>
