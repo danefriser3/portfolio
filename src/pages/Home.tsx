@@ -45,7 +45,7 @@ const Home = () => {
             </div>
           </div>
           <img
-            src="/src/assets/profilo_buono.jpg"
+            src="/profilo_buono.jpg"
             alt="Developer working on laptop"
             className="w-80 md:w-96 lg:w-[325px] rounded-2xl shadow-lg"
           />
@@ -91,21 +91,21 @@ const Home = () => {
                 title: "Task Manager",
                 description:
                   "An intuitive app for managing daily tasks efficiently.",
-                image: "/src/assets/task-manager.png",
+                image: "/task-manager.png",
                 link: "https://vite-app-flax-zeta.vercel.app/",
               },
               {
                 title: "Portfolio Website",
                 description:
                   "A personal website showcasing my skills and projects.",
-                image: "/src/assets/portfolio.png",
+                image: "/portfolio.png",
                 link: "/",
               },
               {
                 title: "E-commerce Platform",
                 description:
                   "A scalable finance family manager with a seamless UI.",
-                image: "/src/assets/ecommerce.png",
+                image: "/ecommerce.png",
                 link: "https://family-app-fe.vercel.app/",
               },
             ].map((project, index) => (
