@@ -151,23 +151,23 @@ const Home = () => {
               {
                 title: "Task Manager",
                 description:
-                  "An intuitive app for managing daily tasks efficiently.",
+                  "Intuitive app for managing daily tasks efficiently.",
                 image: "/task-manager.png",
                 link: "https://vite-app-flax-zeta.vercel.app/",
               },
               {
                 title: "Portfolio Website",
                 description:
-                  "A personal website showcasing my skills and projects.",
+                  "Personal website showcasing my skills and projects.",
                 image: "/portfolio.png",
                 link: "/",
               },
               {
                 title: "E-commerce Platform",
                 description:
-                  "A scalable finance family manager with a seamless UI.",
+                  "Basic eCommerce for standard purpose.",
                 image: "/ecommerce.png",
-                link: "https://family-app-fe.vercel.app/",
+                link: "https://ecommerce-app-gold-three.vercel.app/",
               },
             ].map((project, index) => (
               <div
