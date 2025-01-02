@@ -79,6 +79,65 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Experience Timeline */}
+      <section className="py-16 bg-white dark:bg-gray-900" id="about">
+        <div className="container mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+            My Journey
+          </h2>
+          <div className="flex flex-col space-y-8">
+            {[
+              {
+                year: "2021 - 2024",
+                title:
+                  "Front-End-Focused Full-Stack Developer at Hitachi Vantara",
+                description: `Worked as a Front-End-Focused Full-Stack Developer for approximately 3 years, an experience that has allowed me to expand my knowledge and skills in various areas of development. My main focus has been on front-end development, where I have been able to apply my creativity and technical abilities to bring visually appealing and user-friendly websites to life.`,
+              },
+              {
+                year: "2020 - 2021",
+                title: "Full Stack Developer at Luebke Consulting",
+                description: `Worked on an internal project oriented for managers coaching.`,
+              },
+              {
+                year: "2017 - 2019",
+                title: "Full Stack Developer at SEOCube",
+                description: `During my time at the company, I had the opportunity to work on a groundbreaking internal project that was designed specifically for SEO specialists. This project was a major undertaking for the company and it required a dedicated team to bring it to fruition. As a member of this team, I was able to contribute my skills and expertise to help make this project a success.`,
+              },
+              {
+                year: "2017",
+                title: "Back End focused Full Stack Developer at Indra",
+                description:
+                  "Short term period job, where I worked as a backend development working with a Java Spring boot based stack, togheter with Oracle as RDBMS.",
+              },
+              {
+                year: "2016",
+                title: "Embedded Developer at STMicroelectronics",
+                description: "Job experience during my last university year.",
+              },
+              {
+                year: "2012 - 2016",
+                title: "Computer Science Bachelor's Degree at University of studies Federico II",
+                description: "Bachelor's degree in Computer Science at University of studies Federico II, Naples.",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex items-start space-x-4 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
+              >
+                <span className="text-xl w-[10%] font-bold text-indigo-500">
+                  {item.year}
+                </span>
+                <div className="w-[90%]">
+                  <h3 className="text-2xl font-bold">{item.title}</h3>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* Projects Showcase */}
       <section className="py-16 bg-gray-100 dark:bg-gray-800" id="projects">
         <div className="container mx-auto text-center">
@@ -135,60 +194,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Experience Timeline */}
-      <section className="py-16 bg-white dark:bg-gray-900" id="about">
-        <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-            My Journey
-          </h2>
-          <div className="flex flex-col space-y-8">
-            {[
-              {
-                year: "2021 - 2024",
-                title:
-                  "Front-End-Focused Full-Stack Developer at Hitachi Vantara",
-                description: `Worked as a Front-End-Focused Full-Stack Developer for approximately 3 years, an experience that has allowed me to expand my knowledge and skills in various areas of development. My main focus has been on front-end development, where I have been able to apply my creativity and technical abilities to bring visually appealing and user-friendly websites to life.`,
-              },
-              {
-                year: "2020 - 2021",
-                title: "Full Stack Developer at Luebke Consulting",
-                description: `Worked on an internal project oriented for managers coaching.`,
-              },
-              {
-                year: "2017 - 2019",
-                title: "Full Stack Developer at SEOCube",
-                description: `During my time at the company, I had the opportunity to work on a groundbreaking internal project that was designed specifically for SEO specialists. This project was a major undertaking for the company and it required a dedicated team to bring it to fruition. As a member of this team, I was able to contribute my skills and expertise to help make this project a success.`,
-              },
-              {
-                year: "2017",
-                title: "Back End focused Full Stack Developer at Indra",
-                description:
-                  "Short term period job, where I worked as a backend development working with a Java Spring boot based stack, togheter with Oracle as RDBMS.",
-              },
-              {
-                year: "2016",
-                title: "Embedded Developer at STMicroelectronics",
-                description: "Job experience during my last university year.",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="flex items-start space-x-4 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
-              >
-                <span className="text-xl w-[10%] font-bold text-indigo-500">
-                  {item.year}
-                </span>
-                <div className="w-[90%]">
-                  <h3 className="text-2xl font-bold">{item.title}</h3>
-                  <p className="text-gray-700 dark:text-gray-300">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
