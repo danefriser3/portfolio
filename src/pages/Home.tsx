@@ -37,7 +37,7 @@ const Home = () => {
                 My Projects
               </a>
               <Link
-                to="/contact"
+                to="/#contact"
                 className="bg-white text-gray-900 font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200 hover:shadow-xl transition"
               >
                 Contact Me
@@ -116,8 +116,10 @@ const Home = () => {
               },
               {
                 year: "2012 - 2016",
-                title: "Computer Science Bachelor's Degree at University of studies Federico II",
-                description: "Bachelor's degree in Computer Science at University of studies Federico II, Naples.",
+                title:
+                  "Computer Science Bachelor's Degree at University of studies Federico II",
+                description:
+                  "Bachelor's degree in Computer Science at University of studies Federico II, Naples.",
               },
             ].map((item, index) => (
               <div
@@ -193,7 +195,35 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      <section className="p-8 bg-white" id="contact">
+        <h2 className="text-4xl font-bold mb-6 text-center">Contact Me</h2>
+        <form className="max-w-lg mx-auto bg-gray-100 p-6 rounded-lg  shadow-[-2px_2px_6px_2px_rgba(0,0,0,0.5)]">
+          <label className="block mb-4">
+            <span className="text-gray-700">Your Name</span>
+            <input
+              type="text"
+              className="mt-1 block w-full rounded-md border-2 p-1 border-gray-300 shadow-sm focus:ring focus:ring-blue-500"
+            />
+          </label>
+          <label className="block mb-4">
+            <span className="text-gray-700">Email</span>
+            <input
+              type="email"
+              className="mt-1 block w-full rounded-md border-2 p-1 border-gray-300 shadow-sm focus:ring focus:ring-blue-500"
+            />
+          </label>
+          <label className="block mb-4">
+            <span className="text-gray-700">Message</span>
+            <textarea className="mt-1 block w-full rounded-md border-2 p-1 border-gray-300 shadow-sm focus:ring focus:ring-blue-500"></textarea>
+          </label>
+          <button
+            type="submit"
+            className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700"
+          >
+            Send
+          </button>
+        </form>
+      </section>
     </div>
   );
 };
