@@ -164,10 +164,16 @@ const Home = () => {
               },
               {
                 title: "E-commerce Platform",
-                description:
-                  "Basic eCommerce for standard purpose.",
+                description: "Basic eCommerce for standard purpose.",
                 image: "/ecommerce.png",
                 link: "https://ecommerce-app-gold-three.vercel.app/",
+              },
+              {
+                title: "To-do App Manager",
+                description:
+                  "To-do app manager for managing tasks efficiently.",
+                image: "/todo-app.png",
+                link: "https://my-todo-app-beta-liart.vercel.app/",
               },
             ].map((project, index) => (
               <div
